@@ -1,12 +1,10 @@
 <script>
-    import Header from '$lib/components/Header.svelte'
     import '$lib/styles/style.scss'
+    import SideNav from "$lib/components/SideNav.svelte";
 </script>
 
-<Header></Header>
+<SideNav></SideNav>
 
 <main>
     <slot></slot>
 </main>
-
-<footer>This is the footer</footer>
