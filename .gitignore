@@ -6,3 +6,4 @@ node_modules
 .env
 .env.*
 !.env.example
+personal-website.iml
