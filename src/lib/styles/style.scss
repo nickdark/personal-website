@@ -1,12 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Noto+Sans&display=swap');
+
+* {
+  scrollbar-color: green #eee;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: green;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #eee;
+}
+
 body {
-    margin: 0;
-    background: #eee;
-    color: #333;
-    font-family: sans-serif;
+  margin: 0;
+  background: #eee;
+  color: #222;
+  font-family: 'Courier Prime', sans-serif;
+  scrollbar-color: green #eee;
 }
 
 main {
-    padding: 1rem;
-    margin: 2rem auto;
-    max-width: 40rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 40rem;
 }
