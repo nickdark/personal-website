@@ -9,13 +9,14 @@
             e.target.src = '/dark-mode-toggle-icon.svg'
             e.target.alt = 'dark mode'
         }
-        console.log(e)
+        console.log(e.target.id)
     }
 </script>
 
 <header>
     <a href="/" id="home"><img src="/computer.svg" alt="site brand logo"></a>
-    <img class="theme-toggle" id="dark-mode" src="/dark-mode-toggle-icon.svg" alt="night mode" on:click={modeToggle}>
+    <!-- TODO: Complete dark-mode toggle    -->
+    <!--    <img class="theme-toggle" id="light-mode" src="/light-mode-toggle-icon.svg" alt="night mode" on:click={modeToggle}>-->
     <nav>
         <ul>
             <li><a href="/blog" data-svelte-prefetch>blog</a></li>
@@ -53,16 +54,16 @@
       align-items: center;
     }
 
-    .theme-toggle {
-      position: absolute;
-      left: 80%;
-      top: 1rem;
-      width: 3.5rem;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
+    //.theme-toggle {
+    //  position: absolute;
+    //  left: 80%;
+    //  top: 1rem;
+    //  width: 3.5rem;
+    //
+    //  &:hover {
+    //    cursor: pointer;
+    //  }
+    //}
   }
 
   ul {
