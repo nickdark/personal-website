@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Noto+Sans&display=swap');
 
 * {
-  scrollbar-color: green #eee;
+  scrollbar-color: darkgreen #eee;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: green;
+  background: darkgreen;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -18,15 +18,43 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 0 0 25rem;
   background: #eee;
   color: #222;
   font-family: 'Courier Prime', sans-serif;
   scrollbar-color: green #eee;
+
+  main {
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 40rem;
+  }
+
+  a {
+    color: darkgreen;
+
+    &:visited {
+      color: purple;
+    }
+  }
 }
 
-main {
-  padding: 1rem;
-  margin: 2rem auto;
-  max-width: 40rem;
+:where(h2, h3, h4, h5, h6) {
+  .icon-link {
+    position: relative;
+
+    &::before {
+      content: '#';
+      position: absolute;
+      left: -1ch;
+      top: 0;
+      line-height: 1;
+      opacity: 0;
+      text-decoration: underline;
+    }
+  }
+
+  &:hover .icon-link::before {
+    opacity: 1;
+  }
 }
