@@ -3,7 +3,7 @@
         <a href="https://www.github.com/nickdark" target="_blank"><img src="/github.svg" alt="github"></a>
         <a href="https://www.linkedin.com/in/nickprieto" target="_blank"><img src="/linkedin.svg" alt="linkedin"></a>
     </div>
-    <span>©2022 Nicholas Prieto</span>
+    <span>©2022 Nick Prieto</span>
 </footer>
 
 <style lang="scss">
