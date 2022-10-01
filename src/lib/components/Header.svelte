@@ -1,5 +1,21 @@
+<script lang="ts">
+    function modeToggle(e) {
+        if (e.target.id === 'dark-mode') {
+            e.target.id = 'light-mode'
+            e.target.src = '/light-mode-toggle-icon.svg'
+            e.target.alt = 'light mode'
+        } else {
+            e.target.id = 'dark-mode'
+            e.target.src = '/dark-mode-toggle-icon.svg'
+            e.target.alt = 'dark mode'
+        }
+        console.log(e)
+    }
+</script>
+
 <header>
     <a href="/" id="home"><img src="/computer.svg" alt="site brand logo"></a>
+    <img class="theme-toggle" id="dark-mode" src="/dark-mode-toggle-icon.svg" alt="night mode" on:click={modeToggle}>
     <nav>
         <ul>
             <li><a href="/blog" data-svelte-prefetch>blog</a></li>
@@ -35,6 +51,17 @@
       margin-top: 30rem;
       justify-content: center;
       align-items: center;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      left: 80%;
+      top: 1rem;
+      width: 3.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
