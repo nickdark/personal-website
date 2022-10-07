@@ -1,5 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Nick Prieto's Web Corner</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut consectetur cumque cupiditate ducimus eaque,
     earum et excepturi exercitationem laboriosam modi, obcaecati odit optio provident ratione sapiente soluta! Iusto,
     reiciendis unde. Ab consequuntur dolorem error obcaecati perspiciatis? A ab accusantium ad, aperiam aspernatur
